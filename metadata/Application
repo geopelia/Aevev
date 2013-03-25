@@ -7,10 +7,12 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "MyModel"
+            "MyModel",
+            "MyModel1"
         ],
         "stores": [
-            "MyTreeStore"
+            "MyTreeStore",
+            "MyStore"
         ],
         "views": [
             "MyViewport"

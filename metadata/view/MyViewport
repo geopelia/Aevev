@@ -163,6 +163,38 @@
                     "designerId": "d0e0a0ed-bd52-44bf-8247-d35698169900",
                     "cn": [
                         {
+                            "type": "Ext.tree.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTreePanel2",
+                                "title": "Marcas",
+                                "store": "MyTreeStore",
+                                "rootVisible": false
+                            },
+                            "designerId": "a81240d1-a0e4-4086-8d0e-ca47143fda42",
+                            "cn": [
+                                {
+                                    "type": "Ext.tree.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyTreeColumn",
+                                        "dataIndex": "name",
+                                        "text": "Name",
+                                        "flex": 1
+                                    },
+                                    "designerId": "32936b2c-346a-46e8-af8f-9cdb0a7aaaed"
+                                }
+                            ]
+                        },
+                        {
                             "type": "Ext.panel.Panel",
                             "reference": {
                                 "name": "items",
@@ -177,96 +209,6 @@
                                 "title": "LOL"
                             },
                             "designerId": "b7d94d0c-4dc8-467b-83f5-63fa012e8bf1"
-                        },
-                        {
-                            "type": "Ext.tree.Panel",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "MyTreePanel2",
-                                "title": "Prueba JSON",
-                                "store": "MyTreeStore",
-                                "rootVisible": false
-                            },
-                            "designerId": "a81240d1-a0e4-4086-8d0e-ca47143fda42",
-                            "cn": [
-                                {
-                                    "type": "Ext.tree.View",
-                                    "reference": {
-                                        "name": "viewConfig",
-                                        "type": "object"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyTreeView2"
-                                    },
-                                    "designerId": "f508f8bc-e42e-40e1-bedb-0883e83713b5",
-                                    "customConfigs": [
-                                        {
-                                            "group": "(Custom Properties)",
-                                            "name": "s",
-                                            "type": "string"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "Ext.tree.Panel",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "MyTreePanel",
-                                "title": "My Tree Panel"
-                            },
-                            "designerId": "e9edbe97-4c70-4c4b-9662-4986ee7f382b",
-                            "cn": [
-                                {
-                                    "type": "Ext.tree.View",
-                                    "reference": {
-                                        "name": "viewConfig",
-                                        "type": "object"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyTreeView"
-                                    },
-                                    "designerId": "b503d27d-160b-4bb2-8ede-5ec30b497fd9"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "Ext.tree.Panel",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "MyTreePanel1",
-                                "title": "My Tree Panel"
-                            },
-                            "designerId": "390b69a5-29e8-4d39-b8f5-3717beee25a7",
-                            "cn": [
-                                {
-                                    "type": "Ext.tree.View",
-                                    "reference": {
-                                        "name": "viewConfig",
-                                        "type": "object"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyTreeView1"
-                                    },
-                                    "designerId": "ae5220d3-8fcf-4a7b-b82a-6cccd4699df4"
-                                }
-                            ]
                         }
                     ]
                 },
@@ -309,70 +251,17 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
+                                        "height": 200,
                                         "style": [
                                             "margin-bottom:10px;"
                                         ],
                                         "designer|userClassName": "MyGridPanel",
-                                        "title": "Listado de Espera"
+                                        "title": "Listado de Espera",
+                                        "columnLines": true,
+                                        "store": "MyStore"
                                     },
                                     "designerId": "f03f7572-459f-4fe7-b485-6f1fd2c1d184",
                                     "cn": [
-                                        {
-                                            "type": "Ext.grid.column.Column",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyColumn",
-                                                "dataIndex": "string",
-                                                "text": "String"
-                                            },
-                                            "designerId": "b06cdb70-87de-417e-8873-ae0f69c18053"
-                                        },
-                                        {
-                                            "type": "Ext.grid.column.Number",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn",
-                                                "dataIndex": "number",
-                                                "text": "Number"
-                                            },
-                                            "designerId": "05534dff-1114-45ed-93cc-b0bc32e84abb"
-                                        },
-                                        {
-                                            "type": "Ext.grid.column.Date",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyDateColumn",
-                                                "dataIndex": "date",
-                                                "text": "Date"
-                                            },
-                                            "designerId": "4f83d8a0-e281-4694-a6da-72ca358a726d"
-                                        },
-                                        {
-                                            "type": "Ext.grid.column.Boolean",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyBooleanColumn",
-                                                "dataIndex": "bool",
-                                                "text": "Boolean"
-                                            },
-                                            "designerId": "3fbf16a7-8086-4458-8a66-5668b70e701b"
-                                        },
                                         {
                                             "type": "Ext.grid.View",
                                             "reference": {
@@ -383,7 +272,35 @@
                                             "userConfig": {
                                                 "designer|userClassName": "MyGridView"
                                             },
-                                            "designerId": "2d06413d-a1b5-4da0-8699-17f73f0b8df6"
+                                            "designerId": "c20a07d1-b3c0-4bc9-9616-a6e8983dec3e"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyColumn",
+                                                "dataIndex": "name",
+                                                "text": "Name"
+                                            },
+                                            "designerId": "fa2d6c9e-7a3c-48d1-ab45-2c5f215cf7e8"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyColumn2",
+                                                "dataIndex": "company",
+                                                "text": "Company"
+                                            },
+                                            "designerId": "940b004c-a1ab-42c9-a173-1d766e444a7b"
                                         }
                                     ]
                                 }

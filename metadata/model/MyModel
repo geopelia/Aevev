@@ -8,5 +8,34 @@
     "userConfig": {
         "designer|userClassName": "MyModel"
     },
-    "designerId": "99e5944a-7709-4c60-9957-16dff7350419"
+    "designerId": "99e5944a-7709-4c60-9957-16dff7350419",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "string",
+                "designer|userClassName": "MyField"
+            },
+            "designerId": "167ddbde-133a-4ee5-9efe-6944c53d9fcd"
+        },
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy",
+                "url": "http://localhost/inicioImg/hola.json"
+            },
+            "designerId": "ffdea584-9d88-499f-a487-e67be27d488f"
+        }
+    ]
 }

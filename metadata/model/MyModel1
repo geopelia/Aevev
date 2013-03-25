@@ -1,0 +1,70 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyModel1"
+    },
+    "designerId": "e53dd9f4-76eb-4cf1-8a70-41bb8fe4925c",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy1",
+                "url": "http://localhost/inicioImg/generated.json"
+            },
+            "designerId": "63493020-7f51-44e6-852f-7135876b928f",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "result",
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "designerId": "71d1422a-fc4d-4a7a-a6e0-723c9d527f63"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "string",
+                "designer|userClassName": "MyField1"
+            },
+            "designerId": "7e29679d-603f-4eb2-b247-20f9ecc65e30"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "company",
+                "type": "string",
+                "designer|userClassName": "MyField2"
+            },
+            "designerId": "efaf9f6e-ad8e-4f21-bc15-0ef863223866"
+        }
+    ]
+}

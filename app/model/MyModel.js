@@ -14,5 +14,17 @@
  */
 
 Ext.define('MyApp.model.MyModel', {
-    extend: 'Ext.data.Model'
+    extend: 'Ext.data.Model',
+
+    fields: [
+        {
+            name: 'name',
+            type: 'string'
+        }
+    ],
+
+    proxy: {
+        type: 'ajax',
+        url: 'http://localhost/inicioImg/hola.json'
+    }
 });

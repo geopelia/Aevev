@@ -95,32 +95,23 @@ Ext.define('MyApp.view.MyViewport', {
                             title: 'Menu de AEVEV',
                             items: [
                                 {
+                                    xtype: 'treepanel',
+                                    title: 'Marcas',
+                                    store: 'MyTreeStore',
+                                    rootVisible: false,
+                                    columns: [
+                                        {
+                                            xtype: 'treecolumn',
+                                            dataIndex: 'name',
+                                            text: 'Name',
+                                            flex: 1
+                                        }
+                                    ]
+                                },
+                                {
                                     xtype: 'panel',
                                     html: '<p> Hola mundo </p>',
                                     title: 'LOL'
-                                },
-                                {
-                                    xtype: 'treepanel',
-                                    title: 'Prueba JSON',
-                                    store: 'MyTreeStore',
-                                    rootVisible: false,
-                                    viewConfig: {
-
-                                    }
-                                },
-                                {
-                                    xtype: 'treepanel',
-                                    title: 'My Tree Panel',
-                                    viewConfig: {
-
-                                    }
-                                },
-                                {
-                                    xtype: 'treepanel',
-                                    title: 'My Tree Panel',
-                                    viewConfig: {
-
-                                    }
                                 }
                             ]
                         },
@@ -141,28 +132,21 @@ Ext.define('MyApp.view.MyViewport', {
                                     items: [
                                         {
                                             xtype: 'gridpanel',
+                                            height: 200,
                                             style: 'margin-bottom:10px;',
                                             title: 'Listado de Espera',
+                                            columnLines: true,
+                                            store: 'MyStore',
                                             columns: [
                                                 {
                                                     xtype: 'gridcolumn',
-                                                    dataIndex: 'string',
-                                                    text: 'String'
+                                                    dataIndex: 'name',
+                                                    text: 'Name'
                                                 },
                                                 {
-                                                    xtype: 'numbercolumn',
-                                                    dataIndex: 'number',
-                                                    text: 'Number'
-                                                },
-                                                {
-                                                    xtype: 'datecolumn',
-                                                    dataIndex: 'date',
-                                                    text: 'Date'
-                                                },
-                                                {
-                                                    xtype: 'booleancolumn',
-                                                    dataIndex: 'bool',
-                                                    text: 'Boolean'
+                                                    xtype: 'gridcolumn',
+                                                    dataIndex: 'company',
+                                                    text: 'Company'
                                                 }
                                             ]
                                         }

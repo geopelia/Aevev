@@ -1,0 +1,15 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "MyModel1",
+        "storeId": "MyStore",
+        "designer|userClassName": "MyStore"
+    },
+    "designerId": "c2051e9d-0d74-4c76-97c4-3344134c7ec6"
+}
