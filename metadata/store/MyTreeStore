@@ -1,0 +1,43 @@
+{
+    "type": "Ext.data.TreeStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "storeId": "MyTreeStore",
+        "designer|userClassName": "MyTreeStore"
+    },
+    "designerId": "be6fd7f3-3b1b-4ca3-b63d-a2c7336f281c",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy",
+                "url": "http://192.168.1.113:3000/caracteristicas.json"
+            },
+            "designerId": "f0cb0e50-daa1-4524-839f-c50fbb9c4e9e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "nombre",
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "designerId": "8f9cd73e-8e2a-4041-ac53-c39431ab9bbe"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "name": "Aevev",
+    "settings": {
+        "exportPath": "/var/www/sencha",
+        "urlPrefix": "",
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 908,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000499,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "483925c2-b9c1-4aea-a1a4-6f667e25f2f0": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        },
+        "acc6e1bf-078a-4c7c-9f69-420040a726d9": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "be6fd7f3-3b1b-4ca3-b63d-a2c7336f281c": {
+            "paths": [
+                "metadata/store/MyTreeStore",
+                "app/store/override/MyTreeStore.js",
+                "app/store/MyTreeStore.js"
+            ],
+            "className": "MyTreeStore"
+        },
+        "99e5944a-7709-4c60-9957-16dff7350419": {
+            "paths": [
+                "metadata/model/MyModel",
+                "app/model/override/MyModel.js",
+                "app/model/MyModel.js"
+            ],
+            "className": "MyModel"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "483925c2-b9c1-4aea-a1a4-6f667e25f2f0"
+        ],
+        "store": [
+            "be6fd7f3-3b1b-4ca3-b63d-a2c7336f281c"
+        ],
+        "controller": [],
+        "model": [
+            "99e5944a-7709-4c60-9957-16dff7350419"
+        ],
+        "resource": [
+            "acc6e1bf-078a-4c7c-9f69-420040a726d9"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
